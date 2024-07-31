@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/GlacialIndifference/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/GlacialIndifference/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/GlacialIndifference/GlacialIndifference-Light.otf') format('opentype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+body {
+    font-family: GlacialIndifference, sans-serif;
+    background-color: black; /* Fondo negro para toda la aplicación */
+    color: white; /* Color del texto blanco para visibilidad */
+    margin: 0;
+    padding: 0;
+}

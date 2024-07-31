@@ -1,0 +1,50 @@
+<div class="inscripcion-container">
+    <h2 class="form-title">Formulario de Inscripción</h2>
+    <form (ngSubmit)="onSubmit()" #inscripcionForm="ngForm">
+      <div class="form-group" [ngClass]="{ 'has-error': nombre.invalid && (nombre.dirty || nombre.touched) }">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" #nombre="ngModel" required />
+        <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="error">
+          El nombre es requerido.
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': apellido.invalid && (apellido.dirty || apellido.touched) }">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" [(ngModel)]="apellido" name="apellido" #apellido="ngModel" required />
+        <div *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)" class="error">
+          El apellido es requerido.
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': dni.invalid && (dni.dirty || dni.touched) }">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" [(ngModel)]="dni" name="dni" #dni="ngModel" required />
+        <div *ngIf="dni.invalid && (dni.dirty || dni.touched)" class="error">
+          El DNI es requerido.
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': ocupacion.invalid && (ocupacion.dirty || ocupacion.touched) }">
+        <label for="ocupacion">Ocupación</label>
+        <input type="text" id="ocupacion" [(ngModel)]="ocupacion" name="ocupacion" #ocupacion="ngModel" required />
+        <div *ngIf="ocupacion.invalid && (ocupacion.dirty || ocupacion.touched)" class="error">
+          La ocupación es requerida.
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': correo.invalid && (correo.dirty || correo.touched) }">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" [(ngModel)]="correo" name="correo" #correo="ngModel" required />
+        <div *ngIf="correo.invalid && (correo.dirty || correo.touched)" class="error">
+          El correo es requerido.
+        </div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': voucher.invalid && (voucher.dirty || voucher.touched) }">
+        <label for="voucher">Voucher</label>
+        <input type="text" id="voucher" [(ngModel)]="voucher" name="voucher" #voucher="ngModel" required />
+        <div *ngIf="voucher.invalid && (voucher.dirty || voucher.touched)" class="error">
+          El voucher es requerido.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="inscripcionForm.invalid">Enviar</button>
+    </form>
+    <div class="separator"></div>
+</div>
+  

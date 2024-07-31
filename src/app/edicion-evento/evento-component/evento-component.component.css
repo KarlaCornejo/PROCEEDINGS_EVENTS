@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
+.header-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+.img-opaca {
+  width: 100%;
+  opacity: 0.5;
+  display: block;
+}
+
+.header-text, .header-upper, .header-lower {
+  font-family: 'GlacialIndifference', sans-serif;
+  color: #fff;
+}
+
+.header-upper {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.header-lower {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 4vw;
+  margin: 0;
+}
+
+.header-description {
+  font-size: 1.5vw;
+  margin: 2px 0;
+}
+
+
+@media (max-width: 768px) {
+  .header-upper {
+    font-size: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .header-lower {
+    top: 40%;
+  }
+
+  .header-title {
+    font-size: 6vw;
+  }
+
+  .header-description {
+    font-size: 3vw;
+  }
+
+  .header-buttons {
+    top: 10px;
+    flex-direction: column;
+  }
+
+  .btn-transparent {
+    font-size: 4vw;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-upper {
+    font-size: 5px;
+  }
+
+  .header-lower {
+    top: 30%;
+  }
+
+  .header-title {
+    font-size: 8vw;
+  }
+
+  .header-description {
+    font-size: 4vw;
+  }
+
+  .header-buttons {
+    top: 5px;
+  }
+
+  .btn-transparent {
+    font-size: 5vw;
+    padding: 6px 12px;
+  }
+}

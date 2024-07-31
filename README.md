@@ -1,64 +1,27 @@
-# Proyecto de Página Web de Proceedings de Eventos
+# FrontEnd
 
-Este proyecto es una aplicación web desarrollada en Flask y MongoEngine para gestionar los proceedings de eventos.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
-## Requisitos Previos
+## Development server
 
-- Python 3.6 o superior
-- pip (gestor de paquetes de Python)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Descargar el repositorio
+## Code scaffolding
 
-- Clona el repositorio.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```bash
-git clone https://github.com/GiomarMC/PROCEEDINGS_EVENTS.git
-```
-- Cambia a la carpeta del proyecto y continua con la instalacion del entorno virtual.
+## Build
 
-## Creación y Activación de un Entorno Virtual
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### En Windows
+## Running unit tests
 
-1. Abre una terminal (cmd, PowerShell, o Git Bash).
-2. Navega al directorio del proyecto.
-3. Crea un entorno virtual con el siguiente comando:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-    ```bash
-    py -3 -m venv .venv
-    ```
+## Running end-to-end tests
 
-4. Activa el entorno virtual:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-    ```bash
-    .venv\Scripts\activate
-    ```
+## Further help
 
-### En Linux/MacOS
-
-1. Abre una terminal.
-2. Navega al directorio del proyecto.
-3. Crea un entorno virtual con el siguiente comando:
-
-    ```bash
-    python3 -m venv .venv
-    ```
-
-4. Activa el entorno virtual:
-
-    ```bash
-    . .venv/bin/activate
-    ```
-
-## Instalación de Requerimientos
-
-Una vez que el entorno virtual esté activado, instala los paquetes necesarios usando el archivo `requirements.txt`.
-
-1. Asegúrate de estar en el directorio del proyecto y que el entorno virtual esté activado.
-2. Ejecuta el siguiente comando:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-Esto instalará Flask, MongoEngine y todas las demás dependencias necesarias para el proyecto.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

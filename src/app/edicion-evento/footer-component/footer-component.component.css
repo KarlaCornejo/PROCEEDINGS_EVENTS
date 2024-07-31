@@ -1,0 +1,41 @@
+.footer {
+    opacity: 0.8;
+    padding: 20px 0;
+    background-color: #000;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    font-family: 'GlacialIndifference', sans-serif;
+    color: #fff;
+  }
+  
+  .footer-info {
+    margin: 5px 0;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  
+    .social-icon-link {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+  
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  

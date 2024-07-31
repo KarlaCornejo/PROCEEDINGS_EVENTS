@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
+.expositor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'GlacialIndifference', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #e2e2e2;
+}
+
+.border-container {
+  position: relative;
+  padding: 20px;
+  border: 10px solid #00216A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  margin-bottom: 0px;
+}
+
+.expositor-image {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.expositor-name {
+  color: #e2e2e2;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.expositor-details {
+  margin-top: 20px;
+}
+
+.expositor-occupation,
+.expositor-email {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
